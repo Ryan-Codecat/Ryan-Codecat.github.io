@@ -1,15 +1,13 @@
 :root {
   color-scheme: light;
-  --ink: #101418;
-  --muted: rgba(16, 20, 24, 0.62);
-  --line: rgba(255, 255, 255, 0.52);
-  --glass: rgba(255, 255, 255, 0.42);
-  --glass-strong: rgba(255, 255, 255, 0.62);
-  --shadow: 0 28px 90px rgba(31, 39, 48, 0.18);
-  --cyan: #62c7f3;
-  --mint: #66d4a6;
-  --coral: #ff826e;
-  --violet: #8c7cf5;
+  --ink: #111820;
+  --muted: rgba(17, 24, 32, 0.62);
+  --soft: rgba(255, 255, 255, 0.54);
+  --line: rgba(255, 255, 255, 0.66);
+  --shadow: 0 28px 90px rgba(31, 42, 52, 0.16);
+  --blue: #4eb8ef;
+  --green: #45c697;
+  --rose: #f58b7b;
   font-family:
     Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI",
     "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", sans-serif;
@@ -28,7 +26,7 @@ body {
   margin: 0;
   color: var(--ink);
   background:
-    linear-gradient(130deg, #ecf7ff 0%, #f7f3eb 34%, #edf8ef 66%, #fff1ec 100%);
+    linear-gradient(140deg, #eaf8ff 0%, #f8f4ed 42%, #edf9f1 70%, #fff0ea 100%);
   overflow-x: hidden;
 }
 
@@ -39,9 +37,9 @@ body::before {
   z-index: -3;
   pointer-events: none;
   background:
-    linear-gradient(100deg, rgba(98, 199, 243, 0.26), transparent 36%),
-    linear-gradient(240deg, rgba(255, 130, 110, 0.23), transparent 42%),
-    linear-gradient(0deg, rgba(102, 212, 166, 0.2), transparent 55%);
+    linear-gradient(110deg, rgba(78, 184, 239, 0.28), transparent 36%),
+    linear-gradient(250deg, rgba(245, 139, 123, 0.24), transparent 44%),
+    linear-gradient(0deg, rgba(69, 198, 151, 0.18), transparent 58%);
 }
 
 a {
@@ -60,10 +58,10 @@ img {
   z-index: -2;
   pointer-events: none;
   background-image:
-    linear-gradient(rgba(255, 255, 255, 0.34) 1px, transparent 1px),
-    linear-gradient(90deg, rgba(255, 255, 255, 0.28) 1px, transparent 1px);
-  background-size: 72px 72px;
-  mask-image: linear-gradient(180deg, black 0%, transparent 82%);
+    linear-gradient(rgba(255, 255, 255, 0.3) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(255, 255, 255, 0.24) 1px, transparent 1px);
+  background-size: 78px 78px;
+  mask-image: linear-gradient(180deg, black 0%, transparent 84%);
 }
 
 .topbar {
@@ -74,37 +72,37 @@ img {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  width: min(980px, calc(100% - 32px));
-  min-height: 58px;
+  width: min(820px, calc(100% - 32px));
+  min-height: 56px;
   padding: 0 18px;
   transform: translateX(-50%);
-  border: 1px solid rgba(255, 255, 255, 0.58);
+  border: 1px solid rgba(255, 255, 255, 0.62);
   border-radius: 999px;
-  background: rgba(255, 255, 255, 0.44);
+  background: rgba(255, 255, 255, 0.42);
   box-shadow: 0 18px 46px rgba(37, 45, 53, 0.12);
   backdrop-filter: blur(24px) saturate(170%);
 }
 
 .brand {
   font-size: 15px;
-  font-weight: 800;
+  font-weight: 820;
   letter-spacing: 0;
 }
 
 .topbar nav {
   display: flex;
-  gap: 6px;
+  gap: 8px;
 }
 
 .topbar nav a {
   display: inline-flex;
   align-items: center;
-  min-height: 36px;
+  min-height: 34px;
   padding: 0 13px;
   border-radius: 999px;
-  color: rgba(16, 20, 24, 0.66);
+  color: rgba(17, 24, 32, 0.66);
   font-size: 13px;
-  font-weight: 700;
+  font-weight: 740;
   transition:
     background 180ms ease,
     color 180ms ease,
@@ -113,34 +111,26 @@ img {
 
 .topbar nav a:hover {
   color: var(--ink);
-  background: rgba(255, 255, 255, 0.5);
+  background: rgba(255, 255, 255, 0.52);
   transform: translateY(-1px);
 }
 
 .page-shell {
-  width: min(1120px, calc(100% - 32px));
+  width: min(920px, calc(100% - 32px));
   margin: 0 auto;
-  padding: 126px 0 70px;
-}
-
-.hero-grid {
-  display: grid;
-  grid-template-columns: minmax(280px, 360px) minmax(0, 1fr);
-  gap: 22px;
-  min-height: 620px;
-  align-items: stretch;
+  padding: 116px 0 60px;
 }
 
 .glass-card {
   position: relative;
   overflow: hidden;
-  border: 1px solid rgba(255, 255, 255, 0.62);
-  border-radius: 30px;
+  border: 1px solid var(--line);
+  border-radius: 32px;
   background:
-    linear-gradient(145deg, rgba(255, 255, 255, 0.72), rgba(255, 255, 255, 0.24)),
-    var(--glass);
+    linear-gradient(145deg, rgba(255, 255, 255, 0.72), rgba(255, 255, 255, 0.28)),
+    rgba(255, 255, 255, 0.36);
   box-shadow: var(--shadow);
-  backdrop-filter: blur(28px) saturate(180%);
+  backdrop-filter: blur(30px) saturate(180%);
   transform-style: preserve-3d;
 }
 
@@ -150,9 +140,9 @@ img {
   inset: 0;
   pointer-events: none;
   background:
-    linear-gradient(135deg, rgba(255, 255, 255, 0.82), transparent 42%),
-    radial-gradient(circle at var(--mx, 50%) var(--my, 20%), rgba(255, 255, 255, 0.78), transparent 28%);
-  opacity: 0.68;
+    linear-gradient(135deg, rgba(255, 255, 255, 0.78), transparent 42%),
+    radial-gradient(circle at var(--mx, 52%) var(--my, 18%), rgba(255, 255, 255, 0.74), transparent 30%);
+  opacity: 0.66;
   mix-blend-mode: screen;
 }
 
@@ -164,250 +154,198 @@ img {
   border-radius: inherit;
   box-shadow:
     inset 0 1px 0 rgba(255, 255, 255, 0.92),
-    inset 0 -28px 62px rgba(255, 255, 255, 0.18);
+    inset 0 -26px 60px rgba(255, 255, 255, 0.17);
 }
 
-.profile-card {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  min-height: 560px;
-  padding: 30px;
+.profile-hero {
+  display: grid;
+  justify-items: center;
+  padding: clamp(34px, 6vw, 58px);
   text-align: center;
 }
 
 .avatar-ring {
   position: relative;
-  width: min(230px, 68vw);
+  z-index: 1;
+  width: clamp(148px, 22vw, 188px);
   aspect-ratio: 1;
-  padding: 8px;
-  border: 1px solid rgba(255, 255, 255, 0.72);
-  border-radius: 38px;
+  padding: 7px;
+  border: 1px solid rgba(255, 255, 255, 0.76);
+  border-radius: 34px;
   background:
-    linear-gradient(145deg, rgba(255, 255, 255, 0.9), rgba(255, 255, 255, 0.24)),
-    rgba(255, 255, 255, 0.42);
+    linear-gradient(145deg, rgba(255, 255, 255, 0.92), rgba(255, 255, 255, 0.28)),
+    var(--soft);
   box-shadow:
-    0 22px 58px rgba(34, 42, 50, 0.18),
-    inset 0 1px 0 rgba(255, 255, 255, 0.9);
-  transform: translateZ(30px);
+    0 20px 54px rgba(34, 42, 50, 0.16),
+    inset 0 1px 0 rgba(255, 255, 255, 0.96);
+  transform: translateZ(24px);
 }
 
 .avatar-ring img {
   width: 100%;
   height: 100%;
   object-fit: cover;
-  border-radius: 30px;
+  border-radius: 27px;
 }
 
-.identity {
-  position: relative;
-  z-index: 1;
-  display: grid;
-  gap: 9px;
-  margin-top: 26px;
-  transform: translateZ(24px);
-}
-
-.identity h1 {
-  margin: 0;
-  font-size: clamp(30px, 3vw, 42px);
-  line-height: 1;
-  letter-spacing: 0;
-}
-
-.identity p,
-.identity a {
-  margin: 0;
-  color: var(--muted);
-  font-size: 15px;
-  line-height: 1.35;
-}
-
-.identity a {
-  justify-self: center;
-  border-bottom: 1px solid rgba(16, 20, 24, 0.2);
-}
-
-.intro {
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-end;
-  min-height: 560px;
-  padding: clamp(30px, 5vw, 62px);
-}
-
-.eyebrow,
+.kicker,
 .card-index {
   position: relative;
   z-index: 1;
-  margin: 0;
-  color: #086e65;
+  margin: 24px 0 0;
+  color: #08766c;
   font-size: 12px;
   font-weight: 850;
   letter-spacing: 0;
   text-transform: uppercase;
 }
 
-.intro h2 {
+.profile-hero h1 {
   position: relative;
   z-index: 1;
-  max-width: 720px;
-  margin: 18px 0 0;
-  font-size: clamp(44px, 6.6vw, 88px);
+  margin: 10px 0 0;
+  font-size: clamp(42px, 7vw, 78px);
   line-height: 0.98;
   letter-spacing: 0;
-  font-weight: 850;
+  font-weight: 860;
 }
 
-.intro-copy {
+.school {
   position: relative;
   z-index: 1;
-  max-width: 650px;
-  margin: 24px 0 0;
-  color: rgba(16, 20, 24, 0.68);
-  font-size: clamp(18px, 2.1vw, 23px);
-  line-height: 1.68;
+  margin: 12px 0 0;
+  color: var(--muted);
+  font-size: clamp(17px, 2vw, 20px);
+  font-weight: 650;
 }
 
-.chip-row,
-.mini-list,
-.action-row {
+.profile-links {
   position: relative;
   z-index: 1;
   display: flex;
   flex-wrap: wrap;
-  gap: 10px;
-}
-
-.chip-row {
-  margin-top: 34px;
-}
-
-.chip-row span,
-.mini-list span,
-.rank-pill,
-.glass-button {
-  display: inline-flex;
-  align-items: center;
   justify-content: center;
-  min-height: 40px;
-  padding: 0 15px;
-  border: 1px solid rgba(255, 255, 255, 0.62);
-  border-radius: 999px;
-  background: rgba(255, 255, 255, 0.42);
-  box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.74);
-  color: rgba(16, 20, 24, 0.74);
-  font-size: 13px;
-  font-weight: 800;
-  backdrop-filter: blur(18px) saturate(160%);
-}
-
-.vibe-grid {
-  display: grid;
-  grid-template-columns: repeat(3, minmax(0, 1fr));
-  gap: 22px;
+  gap: 10px;
   margin-top: 22px;
 }
 
-.vibe-card {
-  min-height: 300px;
-  padding: 28px;
+.profile-links a,
+.glass-button,
+.tag-row span,
+.rank-chip {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 42px;
+  padding: 0 16px;
+  border: 1px solid rgba(255, 255, 255, 0.66);
+  border-radius: 999px;
+  background: rgba(255, 255, 255, 0.43);
+  box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.74);
+  color: rgba(17, 24, 32, 0.75);
+  font-size: 14px;
+  font-weight: 780;
+  backdrop-filter: blur(18px) saturate(160%);
 }
 
-.vibe-card.wide {
-  grid-column: span 1;
-}
-
-.vibe-card h3 {
-  position: relative;
-  z-index: 1;
-  margin: 36px 0 0;
-  font-size: clamp(34px, 4vw, 54px);
-  line-height: 1;
-  letter-spacing: 0;
-}
-
-.vibe-card p:not(.card-index) {
-  position: relative;
-  z-index: 1;
-  margin: 18px 0 0;
-  color: var(--muted);
-  font-size: 17px;
-  line-height: 1.72;
-}
-
-.mini-list,
-.action-row {
-  margin-top: 24px;
-}
-
-.rank-pill {
-  position: relative;
-  z-index: 1;
-  width: fit-content;
-  margin-top: 24px;
-  color: #111827;
-}
-
+.profile-links a,
 .glass-button {
-  min-height: 46px;
-  padding: 0 18px;
-  color: #0f172a;
   transition:
     transform 180ms ease,
     background 180ms ease,
     border-color 180ms ease;
 }
 
+.profile-links a:hover,
 .glass-button:hover {
   transform: translateY(-2px);
   background: rgba(255, 255, 255, 0.64);
-  border-color: rgba(255, 255, 255, 0.86);
+  border-color: rgba(255, 255, 255, 0.88);
+}
+
+.bio {
+  position: relative;
+  z-index: 1;
+  max-width: 620px;
+  margin: 28px 0 0;
+  color: rgba(17, 24, 32, 0.68);
+  font-size: clamp(18px, 2.3vw, 22px);
+  line-height: 1.72;
+}
+
+.vibe-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 18px;
+  margin-top: 18px;
+}
+
+.mini-card {
+  min-height: 260px;
+  padding: 26px;
+}
+
+.mini-card .card-index {
+  margin: 0;
+}
+
+.mini-card h2 {
+  position: relative;
+  z-index: 1;
+  margin: 30px 0 0;
+  font-size: clamp(32px, 4vw, 48px);
+  line-height: 1;
+  letter-spacing: 0;
+}
+
+.mini-card p {
+  position: relative;
+  z-index: 1;
+  margin: 17px 0 0;
+  color: var(--muted);
+  font-size: 16px;
+  line-height: 1.68;
+}
+
+.tag-row,
+.action-row {
+  position: relative;
+  z-index: 1;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 9px;
+  margin-top: 22px;
+}
+
+.rank-chip {
+  position: relative;
+  z-index: 1;
+  width: fit-content;
+  margin-top: 22px;
 }
 
 .footer {
   display: flex;
   justify-content: space-between;
   gap: 18px;
-  width: min(1120px, calc(100% - 32px));
+  width: min(920px, calc(100% - 32px));
   margin: 0 auto;
   padding: 0 0 34px;
-  color: rgba(16, 20, 24, 0.55);
+  color: rgba(17, 24, 32, 0.54);
   font-size: 13px;
 }
 
-@media (max-width: 920px) {
-  .hero-grid,
+@media (max-width: 860px) {
   .vibe-grid {
     grid-template-columns: 1fr;
   }
 
-  .hero-grid {
+  .mini-card {
     min-height: auto;
-  }
-
-  .profile-card,
-  .intro {
-    min-height: auto;
-  }
-
-  .profile-card {
-    padding-top: 34px;
-    padding-bottom: 34px;
-  }
-
-  .intro {
-    padding-top: 56px;
-    padding-bottom: 56px;
-  }
-
-  .avatar-ring {
-    width: 210px;
   }
 }
 
-@media (max-width: 620px) {
+@media (max-width: 560px) {
   .topbar {
     top: 12px;
     width: calc(100% - 22px);
@@ -419,7 +357,7 @@ img {
   }
 
   .page-shell {
-    width: min(100% - 22px, 1120px);
+    width: min(100% - 22px, 920px);
     padding-top: 88px;
   }
 
@@ -427,28 +365,32 @@ img {
     border-radius: 24px;
   }
 
+  .profile-hero {
+    padding: 30px 18px;
+  }
+
   .avatar-ring {
-    width: 178px;
-    border-radius: 30px;
+    width: 142px;
+    border-radius: 28px;
   }
 
   .avatar-ring img {
-    border-radius: 24px;
+    border-radius: 22px;
   }
 
-  .intro h2 {
-    font-size: clamp(36px, 11vw, 58px);
+  .profile-hero h1 {
+    font-size: clamp(38px, 13vw, 56px);
   }
 
-  .chip-row span,
-  .mini-list span,
-  .rank-pill,
-  .glass-button {
+  .profile-links {
     width: 100%;
   }
 
-  .vibe-card {
-    min-height: 250px;
+  .profile-links a,
+  .glass-button,
+  .tag-row span,
+  .rank-chip {
+    width: 100%;
   }
 
   .footer {

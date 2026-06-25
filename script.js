@@ -15,12 +15,12 @@ if (canHover && !reducedMotion) {
       const y = event.clientY - rect.top;
       const px = x / rect.width;
       const py = y / rect.height;
-      const rotateX = (0.5 - py) * 7;
-      const rotateY = (px - 0.5) * 8;
+      const rotateX = (0.5 - py) * 3;
+      const rotateY = (px - 0.5) * 4;
 
       card.style.setProperty("--mx", `${px * 100}%`);
       card.style.setProperty("--my", `${py * 100}%`);
-      card.style.transform = `perspective(1200px) rotateX(${rotateX}deg) rotateY(${rotateY}deg) translateY(-3px)`;
+      card.style.transform = `perspective(1200px) rotateX(${rotateX}deg) rotateY(${rotateY}deg) translateY(-2px)`;
     });
 
     card.addEventListener("pointerleave", () => {
