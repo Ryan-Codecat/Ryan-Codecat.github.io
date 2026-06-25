@@ -5,82 +5,105 @@
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta
       name="description"
-      content="Ryan-Codecat / Rongjian You 的个人主页。MLLM, hiphop, CS2, Bilibili, and a little controlled chaos."
+      content="Ryan-Codecat / Rongjian You 的个人主页。MLLM, hiphop, CS2, and Bilibili."
     />
-    <meta name="theme-color" content="#eef6f8" />
+    <meta name="theme-color" content="#000000" />
     <title>Ryan-Codecat · Rongjian You</title>
     <link
       rel="icon"
-      href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='18' fill='%230d1117'/%3E%3Ctext x='50%25' y='56%25' text-anchor='middle' font-family='Arial,sans-serif' font-size='28' font-weight='800' fill='%23b8ecff'%3ER%3C/text%3E%3C/svg%3E"
+      href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%23000'/%3E%3Ctext x='50%25' y='56%25' text-anchor='middle' font-family='Arial,sans-serif' font-size='28' font-weight='800' fill='%23fff'%3ER%3C/text%3E%3C/svg%3E"
     />
     <link rel="preload" href="assets/ryan-codecat-avatar.jpg" as="image" />
     <link rel="stylesheet" href="styles.css" />
   </head>
   <body>
-    <div class="ambient" aria-hidden="true"></div>
-
-    <header class="topbar" aria-label="主导航">
+    <header class="global-nav">
       <a class="brand" href="#top">Ryan-Codecat</a>
       <nav aria-label="页面导航">
-        <a href="#vibes">Vibes</a>
-        <a href="#links">Links</a>
+        <a href="#highlights">Highlights</a>
+        <a href="#contact">Contact</a>
       </nav>
     </header>
 
-    <main id="top" class="page-shell">
-      <section class="profile-hero glass-card" aria-label="个人信息">
-        <div class="avatar-ring">
+    <main id="top">
+      <section class="hero section-reveal" aria-label="首页">
+        <p class="eyebrow">Rongjian You</p>
+        <h1>全员抽象派。</h1>
+        <p class="hero-subtitle">MLLM researcher. Hiphop listener. CS2 B+ survivor.</p>
+
+        <div class="hero-actions" aria-label="主要链接">
+          <a class="button primary" href="https://github.com/Ryan-Codecat" rel="noreferrer">GitHub</a>
+          <a class="button secondary" href="https://space.bilibili.com/37456088?spm_id_from=333.1007.0.0" rel="noreferrer">Bilibili</a>
+        </div>
+
+        <figure class="portrait-stage" aria-label="Rongjian You 照片">
           <img src="assets/ryan-codecat-avatar.jpg" alt="Rongjian You wearing a blue cartoon helmet" />
-        </div>
+        </figure>
 
-        <p class="kicker">MLLM training · B+ confidence</p>
-        <h1>Rongjian You</h1>
         <p class="school">Jinan University</p>
-
-        <div class="profile-links" aria-label="联系方式">
-          <a href="mailto:yourongjian718@gmail.com">yourongjian718@gmail.com</a>
-          <a href="https://github.com/Ryan-Codecat" rel="noreferrer">GitHub</a>
-        </div>
-
-        <p class="bio">
-          一名训练 MLLM 的研究生。正经内容暂时不多，抽象浓度正在稳定上升。
-        </p>
       </section>
 
-      <section class="vibe-grid" id="vibes" aria-label="兴趣">
-        <article class="glass-card mini-card">
-          <span class="card-index">01</span>
-          <h2>Hiphop</h2>
-          <p>喜欢 hiphop，耳机里常驻 Asen、GALI、法老。</p>
-          <div class="tag-row">
-            <span>Asen</span>
-            <span>GALI</span>
-            <span>法老</span>
-          </div>
-        </article>
+      <section class="intro-strip section-reveal" id="contact" aria-label="个人信息">
+        <div class="intro-copy">
+          <p class="section-label">Profile</p>
+          <h2>Rongjian You</h2>
+          <p>人工智能在读研究生，目前从事 MLLM 模型训练。正经内容暂时不多，但主页先帅起来。</p>
+        </div>
+        <div class="contact-list" aria-label="联系方式">
+          <a href="mailto:yourongjian718@gmail.com">
+            <span>Email</span>
+            <strong>yourongjian718@gmail.com</strong>
+          </a>
+          <a href="https://github.com/Ryan-Codecat" rel="noreferrer">
+            <span>GitHub</span>
+            <strong>Ryan-Codecat</strong>
+          </a>
+        </div>
+      </section>
 
-        <article class="glass-card mini-card">
-          <span class="card-index">02</span>
-          <h2>CS2</h2>
-          <p>完美世界平台 B+。不是不想上分，是给算法留一点成长空间。</p>
-          <div class="rank-chip">Perfect World · B+</div>
-        </article>
+      <section class="highlights" id="highlights" aria-label="先刷重点">
+        <div class="section-heading section-reveal">
+          <p class="section-label">Highlights</p>
+          <h2>先刷重点。</h2>
+        </div>
 
-        <article class="glass-card mini-card" id="links">
-          <span class="card-index">03</span>
-          <h2>Bilibili</h2>
-          <p>另一个入口。可能更抽象，也可能只是更真实。</p>
-          <div class="action-row">
-            <a class="glass-button" href="https://space.bilibili.com/37456088?spm_id_from=333.1007.0.0" rel="noreferrer">Bilibili</a>
-            <a class="glass-button" href="mailto:yourongjian718@gmail.com">Email</a>
-          </div>
-        </article>
+        <div class="feature-grid">
+          <article class="feature-card dark section-reveal">
+            <p class="card-number">01</p>
+            <h3>Hiphop</h3>
+            <p>很喜欢 hiphop。最喜欢的 rapper 是 Asen、GALI、法老。</p>
+            <div class="pill-row">
+              <span>Asen</span>
+              <span>GALI</span>
+              <span>法老</span>
+            </div>
+          </article>
+
+          <article class="feature-card light section-reveal">
+            <p class="card-number">02</p>
+            <h3>CS2</h3>
+            <p>完美世界平台 B+。不是不想上分，是给对手一点体验空间。</p>
+            <div class="metric">
+              <span>Perfect World</span>
+              <strong>B+</strong>
+            </div>
+          </article>
+
+          <article class="feature-card image-card section-reveal">
+            <div>
+              <p class="card-number">03</p>
+              <h3>Bilibili</h3>
+              <p>另一个入口。可能更抽象，也可能只是更真实。</p>
+            </div>
+            <a class="button primary" href="https://space.bilibili.com/37456088?spm_id_from=333.1007.0.0" rel="noreferrer">Visit</a>
+          </article>
+        </div>
       </section>
     </main>
 
-    <footer class="footer">
+    <footer class="site-footer">
       <span>© <span id="year"></span> Ryan-Codecat</span>
-      <span>glass card, code cat, B+ warrior</span>
+      <span>Designed like a product page, not a resume.</span>
     </footer>
 
     <script src="script.js"></script>
