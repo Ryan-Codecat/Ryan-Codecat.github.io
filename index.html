@@ -3,176 +3,320 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <script>
+      document.documentElement.classList.add("js");
+    </script>
     <meta
       name="description"
-      content="Ryan-Codecat / 游荣健 (Rongjian You) 的个人主页 — MLLM 研究、hiphop、CS2、Bilibili。一本暗色个人杂志。"
+      content="Ryan-Codecat / 游荣健 (Rongjian You) 的个人主页 — MLLM 研究、hiphop、CS2、Bilibili。全员抽象派。"
     />
-    <meta name="theme-color" content="#0c0b0a" />
-    <title>Ryan-Codecat · 游荣健 — The Personal Archive</title>
+    <meta name="theme-color" content="#050506" />
+    <title>Ryan-Codecat · 游荣健 — 全员抽象派</title>
     <link
       rel="icon"
-      href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='12' fill='%230c0b0a'/%3E%3Ctext x='50%25' y='57%25' text-anchor='middle' font-family='Georgia,serif' font-size='34' font-style='italic' font-weight='600' fill='%23ECE7DC'%3ER%3C/text%3E%3C/svg%3E"
+      href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%23050506'/%3E%3Ctext x='50%25' y='56%25' text-anchor='middle' font-family='-apple-system,Helvetica,Arial' font-size='34' font-weight='800' fill='%23F5F5F7'%3ER%3C/text%3E%3C/svg%3E"
     />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,500;0,9..144,600;0,9..144,900;1,9..144,400;1,9..144,500&family=Noto+Serif+SC:wght@500;700;900&family=Space+Mono:ital,wght@0,400;0,700;1,400&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&family=Noto+Sans+SC:wght@400;500;700;900&display=swap"
       rel="stylesheet"
     />
     <link rel="preload" href="assets/ryan-codecat-avatar.jpg" as="image" />
-    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="styles.css?v=4" />
   </head>
   <body>
     <div class="scroll-progress" aria-hidden="true"></div>
 
-    <header class="masthead" id="top">
-      <a class="wordmark" href="#top">Ryan&#8209;Codecat</a>
-      <p class="masthead-meta">Issue 01 — MMXXVI</p>
-      <nav class="masthead-nav" aria-label="栏目导航">
-        <a href="#index">Index</a>
-        <a href="#features">Features</a>
-        <a href="#colophon">Contact</a>
-      </nav>
+    <header class="nav" id="top">
+      <div class="nav-inner">
+        <a class="nav-mark" href="#top">Ryan&#8209;Codecat</a>
+        <nav class="nav-links" aria-label="导航">
+          <a href="#now">此刻</a>
+          <a href="#timeline">编年史</a>
+          <a href="#gallery">影像</a>
+          <a href="#contact">联系</a>
+        </nav>
+      </div>
     </header>
 
     <main>
-      <section class="cover" aria-label="封面">
-        <div class="cover-head reveal">
-          <p class="kicker">The Personal Archive · 个人主页</p>
-          <h1 class="cover-title">全员<span class="title-em">抽象</span>派。</h1>
-          <p class="cover-deck">
-            <em>An abstractionist, by consensus.</em> MLLM researcher,
-            hiphop listener, and a proud CS2 B+ survivor.
+      <section class="hero" aria-label="封面">
+        <div class="hero-glow" data-parallax="0.12" aria-hidden="true"></div>
+        <div class="hero-inner reveal">
+          <p class="hero-kicker kicker">Ryan-Codecat · 个人主页 · Issue 01</p>
+          <h1 class="hero-title">全员<span class="grad">抽象</span>派。</h1>
+          <p class="hero-deck">
+            <em>An abstractionist, by consensus.</em><br />
+            MLLM 研究者 · hiphop 重度患者 · CS2 B+ 幸存者。
           </p>
         </div>
+        <div class="hero-cue" aria-hidden="true">
+          <span></span>
+          Scroll
+        </div>
+      </section>
 
-        <figure class="cover-figure reveal">
-          <div class="figure-frame">
+      <section class="zoom" data-pin="zoom" aria-label="肖像">
+        <div class="zoom-sticky">
+          <figure class="zoom-figure">
             <img
               src="assets/ryan-codecat-avatar.jpg"
               alt="游荣健，戴着蓝色卡通头盔"
             />
-          </div>
-          <figcaption>Fig. 01 — In the blue helmet, Guangzhou.</figcaption>
-        </figure>
-
-        <dl class="cover-credits reveal">
-          <div><dt>Name</dt><dd>游荣健 · Rongjian You</dd></div>
-          <div><dt>Role</dt><dd>MLLM Researcher</dd></div>
-          <div><dt>School</dt><dd>Jinan University</dd></div>
-          <div><dt>Based</dt><dd>Guangzhou, CN</dd></div>
-        </dl>
-
-        <div class="cover-actions reveal">
-          <a class="link-arrow" href="https://github.com/Ryan-Codecat" rel="noreferrer">GitHub</a>
-          <a class="link-arrow" href="https://space.bilibili.com/37456088?spm_id_from=333.1007.0.0" rel="noreferrer">Bilibili</a>
+            <figcaption class="zoom-cap">广州 · 蓝盔之下 — Guangzhou</figcaption>
+          </figure>
         </div>
       </section>
 
-      <section class="index" id="index" aria-label="目录">
-        <p class="section-mark reveal">Contents · 目录</p>
-        <ol class="index-list">
-          <li class="reveal">
-            <a href="#feat-hiphop">
-              <span class="idx-no">01</span>
-              <span class="idx-title">Hiphop</span>
-              <span class="idx-leader" aria-hidden="true"></span>
-              <span class="idx-page">听</span>
-            </a>
+      <section class="manifesto" data-pin="lines" aria-label="宣言">
+        <div class="manifesto-sticky">
+          <p class="m-line">没有论文。</p>
+          <p class="m-line">没有开源。</p>
+          <p class="m-line">博客？还没开张。</p>
+          <p class="m-line">履历干净得，像刚装好的系统。</p>
+          <p class="m-line">但<span class="grad">抽象</span>这件事——满级。</p>
+        </div>
+      </section>
+
+      <section class="feature feature--hiphop" id="hiphop" aria-label="Hiphop">
+        <p class="feature-huge" data-parallax="0.06" aria-hidden="true">HIPHOP</p>
+        <div class="feature-inner reveal">
+          <p class="feature-kicker kicker">01 — 听</p>
+          <h2 class="feature-title">Hiphop。</h2>
+          <p class="feature-deck">
+            歌单常年单曲循环，节奏比论文 deadline 还稳。
+          </p>
+          <dl class="feature-meta">
+            <div>
+              <dt>Heavy rotation</dt>
+              <dd>Asen · GALI · 法老</dd>
+            </div>
+            <div>
+              <dt>Mood</dt>
+              <dd>抽象，但踩在拍上</dd>
+            </div>
+          </dl>
+          <a
+            class="feature-link"
+            href="https://y.music.163.com/m/user?id=305379541"
+            rel="noreferrer"
+          >
+            听我的歌单 &#8599;
+          </a>
+        </div>
+      </section>
+
+      <section class="feature feature--cs2" id="cs2" aria-label="Counter-Strike 2">
+        <p class="feature-huge" data-parallax="0.06" aria-hidden="true">B+</p>
+        <div class="feature-inner reveal">
+          <p class="feature-kicker kicker">02 — 打</p>
+          <h2 class="feature-title">Counter&#8209;Strike&nbsp;2。</h2>
+          <p class="feature-deck">
+            完美世界平台 B+。不是上不去，是给对手留一点体验空间。
+          </p>
+          <dl class="feature-meta">
+            <div>
+              <dt>Platform</dt>
+              <dd>Perfect World</dd>
+            </div>
+            <div>
+              <dt>Rank</dt>
+              <dd>B+ 持证上岗</dd>
+            </div>
+          </dl>
+          <a
+            class="feature-link"
+            href="https://steamcommunity.com/profiles/76561199230412115/"
+            rel="noreferrer"
+          >
+            Steam 资料 &#8599;
+          </a>
+        </div>
+      </section>
+
+      <section class="feature feature--bili" id="bili" aria-label="Bilibili">
+        <p class="feature-huge" data-parallax="0.06" aria-hidden="true">B站</p>
+        <div class="feature-inner reveal">
+          <p class="feature-kicker kicker">03 — 看</p>
+          <h2 class="feature-title">Bilibili。</h2>
+          <p class="feature-deck">
+            另一个入口。可能更抽象，也可能只是更真实。
+          </p>
+          <a
+            class="feature-link"
+            href="https://space.bilibili.com/37456088?spm_id_from=333.1007.0.0"
+            rel="noreferrer"
+          >
+            前往主页 &#8599;
+          </a>
+        </div>
+      </section>
+
+      <section class="timeline" id="timeline" aria-label="编年史">
+        <div class="section-head">
+          <p class="kicker reveal">编年史 · Archive</p>
+          <h2 class="section-title reveal">抽象编年史。</h2>
+        </div>
+        <ol class="tl-list">
+          <li class="tl-item reveal">
+            <span class="tl-year">2020–24</span>
+            <div class="tl-body">
+              <h3 class="tl-title">本科 · 华东交通大学</h3>
+              <p class="tl-text">计算机科学与技术。故事的开头。</p>
+            </div>
           </li>
-          <li class="reveal">
-            <a href="#feat-cs2">
-              <span class="idx-no">02</span>
-              <span class="idx-title">Counter&#8209;Strike 2</span>
-              <span class="idx-leader" aria-hidden="true"></span>
-              <span class="idx-page">打</span>
-            </a>
+          <li class="tl-item reveal">
+            <span class="tl-year">待补</span>
+            <div class="tl-body">
+              <h3 class="tl-title">入坑 Hiphop</h3>
+              <p class="tl-text">
+                Asen、GALI、法老 开始常驻歌单。<span class="tbd">哪年入坑可补</span>
+              </p>
+            </div>
           </li>
-          <li class="reveal">
-            <a href="#feat-bili">
-              <span class="idx-no">03</span>
-              <span class="idx-title">Bilibili</span>
-              <span class="idx-leader" aria-hidden="true"></span>
-              <span class="idx-page">看</span>
-            </a>
+          <li class="tl-item reveal">
+            <span class="tl-year">2024–27</span>
+            <div class="tl-body">
+              <h3 class="tl-title">研究生 · 暨南大学</h3>
+              <p class="tl-text">人工智能方向，开始正经搞研究。</p>
+            </div>
+          </li>
+          <li class="tl-item reveal">
+            <span class="tl-year">战绩</span>
+            <div class="tl-body">
+              <h3 class="tl-title">CS2 爬到 B+</h3>
+              <p class="tl-text">
+                完美世界平台。<span class="tbd">段位历程可补</span>
+              </p>
+            </div>
+          </li>
+          <li class="tl-item reveal">
+            <span class="tl-year">进行中</span>
+            <div class="tl-body">
+              <h3 class="tl-title">训练 MLLM 模型</h3>
+              <p class="tl-text">
+                目前的主线任务 —— 多模态大模型，训到 loss 收敛为止。
+              </p>
+            </div>
           </li>
         </ol>
       </section>
 
-      <section class="features" id="features" aria-label="特写">
-        <article class="entry reveal" id="feat-hiphop">
-          <p class="entry-no">01</p>
-          <div class="entry-body">
-            <h2 class="entry-title">Hiphop</h2>
-            <p class="entry-deck">
-              很喜欢 hiphop。歌单常年单曲循环，节奏比论文 deadline 还稳。
-            </p>
-            <dl class="entry-credits">
-              <div><dt>Heavy rotation</dt><dd>Asen · GALI · 法老</dd></div>
-            </dl>
+      <section class="now" id="now" aria-label="此刻">
+        <div class="section-head">
+          <p class="kicker reveal">此刻 · Now</p>
+          <h2 class="section-title reveal">此刻在做什么。</h2>
+        </div>
+        <div class="now-grid stagger reveal">
+          <div class="now-card">
+            <p class="now-k">Work</p>
+            <p class="now-v">在训 MLLM 模型</p>
+            <p class="now-sub">多模态，调到 loss 收敛为止</p>
           </div>
-        </article>
-
-        <article class="entry reveal" id="feat-cs2">
-          <p class="entry-no">02</p>
-          <div class="entry-body">
-            <h2 class="entry-title">Counter&#8209;Strike 2</h2>
-            <p class="entry-deck">
-              完美世界平台 B+。不是不想上分，是给对手一点体验空间。
-            </p>
-            <dl class="entry-credits">
-              <div><dt>Platform</dt><dd>Perfect World</dd></div>
-            </dl>
+          <div class="now-card">
+            <p class="now-k">Play</p>
+            <p class="now-v">CS2 · B+ 持证上岗</p>
+            <p class="now-sub">完美世界平台</p>
           </div>
-          <p class="entry-figure" aria-hidden="true">B+</p>
-        </article>
-
-        <article class="entry reveal" id="feat-bili">
-          <p class="entry-no">03</p>
-          <div class="entry-body">
-            <h2 class="entry-title">Bilibili</h2>
-            <p class="entry-deck">
-              另一个入口。可能更抽象，也可能只是更真实。
-            </p>
-            <a class="link-arrow" href="https://space.bilibili.com/37456088?spm_id_from=333.1007.0.0" rel="noreferrer">前往主页</a>
+          <div class="now-card">
+            <p class="now-k">Listen</p>
+            <p class="now-v">单曲循环中</p>
+            <p class="now-sub">Asen / GALI / 法老</p>
           </div>
-        </article>
+          <div class="now-card">
+            <p class="now-k">Local time</p>
+            <p class="now-v now-clock" id="clock">--:--:--</p>
+            <p class="now-sub">广州 · GMT+8</p>
+          </div>
+        </div>
       </section>
 
-      <section class="profile" id="profile" aria-label="简介">
-        <p class="section-mark reveal">Profile · 简介</p>
-        <p class="profile-lead reveal">
-          人工智能在读研究生，目前从事 <em>MLLM</em>
-          模型训练。正经内容暂时不多，但主页先帅起来——毕竟排版也是生产力。
-        </p>
+      <section class="gallery" id="gallery" aria-label="影像">
+        <div class="section-head">
+          <p class="kicker reveal">影像 · Gallery</p>
+          <h2 class="section-title reveal">影像墙。</h2>
+        </div>
+        <div class="gal-grid reveal">
+          <figure class="gal-item span3 tall">
+            <img
+              src="assets/ryan-codecat-avatar.jpg"
+              alt="游荣健"
+              loading="lazy"
+            />
+          </figure>
+          <figure class="gal-item span3 ph" data-ph="待补"></figure>
+          <figure class="gal-item wide ph" data-ph="把照片丢进 assets/"></figure>
+          <figure class="gal-item wide ph" data-ph="待补"></figure>
+          <figure class="gal-item wide ph" data-ph="待补"></figure>
+        </div>
       </section>
     </main>
 
-    <footer class="colophon" id="colophon" aria-label="版本说明与联系">
-      <div class="colophon-contact">
-        <p class="section-mark">Contact · 联系</p>
-        <dl>
-          <div>
-            <dt>Email</dt>
-            <dd><a href="mailto:yourongjian718@gmail.com">yourongjian718@gmail.com</a></dd>
-          </div>
-          <div>
-            <dt>GitHub</dt>
-            <dd><a href="https://github.com/Ryan-Codecat" rel="noreferrer">@Ryan&#8209;Codecat</a></dd>
-          </div>
-          <div>
-            <dt>Bilibili</dt>
-            <dd><a href="https://space.bilibili.com/37456088?spm_id_from=333.1007.0.0" rel="noreferrer">space.bilibili.com</a></dd>
-          </div>
-        </dl>
+    <footer class="footer" id="contact" aria-label="联系">
+      <div class="cta">
+        <p class="kicker reveal">联系 · Contact</p>
+        <h2 class="cta-title reveal">聊聊？</h2>
+        <a class="cta-mail reveal" href="mailto:yourongjian718@gmail.com"
+          >yourongjian718@gmail.com</a
+        >
       </div>
-      <div class="colophon-meta">
-        <p>© <span id="year"></span> 游荣健 · Ryan&#8209;Codecat</p>
-        <p>Set in Fraunces, Noto Serif SC &amp; Space Mono.</p>
-        <p>全员抽象派 · typeset in the dark.</p>
+
+      <nav class="social" aria-label="社交链接">
+        <a href="mailto:yourongjian718@gmail.com">
+          <span class="social-k">Email</span>
+          <span class="social-v">yourongjian718</span>
+        </a>
+        <a href="https://github.com/Ryan-Codecat" rel="noreferrer">
+          <span class="social-k">GitHub</span>
+          <span class="social-v">@Ryan-Codecat</span>
+        </a>
+        <a
+          href="https://space.bilibili.com/37456088?spm_id_from=333.1007.0.0"
+          rel="noreferrer"
+        >
+          <span class="social-k">Bilibili</span>
+          <span class="social-v">37456088</span>
+        </a>
+        <a href="https://y.music.163.com/m/user?id=305379541" rel="noreferrer">
+          <span class="social-k">网易云音乐</span>
+          <span class="social-v">pink_wh1te</span>
+        </a>
+        <a href="https://weibo.com/u/6004674153" rel="noreferrer">
+          <span class="social-k">微博</span>
+          <span class="social-v">@6004674153</span>
+        </a>
+        <a href="https://xhslink.com/m/8AcsSa48hZn" rel="noreferrer">
+          <span class="social-k">小红书</span>
+          <span class="social-v">看我主页</span>
+        </a>
+        <a href="https://v.douyin.com/RndQLPBArAs/" rel="noreferrer">
+          <span class="social-k">抖音</span>
+          <span class="social-v">看作品</span>
+        </a>
+        <a
+          href="https://www.zhihu.com/people/4a35e6100f64be2098f32367030bc27c"
+          rel="noreferrer"
+        >
+          <span class="social-k">知乎</span>
+          <span class="social-v">主页</span>
+        </a>
+        <a
+          href="https://steamcommunity.com/profiles/76561199230412115/"
+          rel="noreferrer"
+        >
+          <span class="social-k">Steam</span>
+          <span class="social-v">CS2 · B+</span>
+        </a>
+      </nav>
+
+      <div class="colophon">
+        <p>© <span id="year"></span> 游荣健 · Ryan-Codecat</p>
+        <p>Set in Inter &amp; Noto Sans SC.</p>
+        <p>全员抽象派 · made in the dark.</p>
       </div>
     </footer>
 
-    <script src="script.js"></script>
+    <script src="script.js?v=4"></script>
   </body>
 </html>
