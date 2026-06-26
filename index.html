@@ -5,105 +5,172 @@
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta
       name="description"
-      content="Ryan-Codecat / Rongjian You 的个人主页。MLLM, hiphop, CS2, and Bilibili."
+      content="Ryan-Codecat / 尤荣健 (Rongjian You) 的个人主页 — MLLM 研究、hiphop、CS2、Bilibili。一本暗色个人杂志。"
     />
-    <meta name="theme-color" content="#000000" />
-    <title>Ryan-Codecat · Rongjian You</title>
+    <meta name="theme-color" content="#0c0b0a" />
+    <title>Ryan-Codecat · 尤荣健 — The Personal Archive</title>
     <link
       rel="icon"
-      href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%23000'/%3E%3Ctext x='50%25' y='56%25' text-anchor='middle' font-family='Arial,sans-serif' font-size='28' font-weight='800' fill='%23fff'%3ER%3C/text%3E%3C/svg%3E"
+      href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='12' fill='%230c0b0a'/%3E%3Ctext x='50%25' y='57%25' text-anchor='middle' font-family='Georgia,serif' font-size='34' font-style='italic' font-weight='600' fill='%23ECE7DC'%3ER%3C/text%3E%3C/svg%3E"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,500;0,9..144,600;0,9..144,900;1,9..144,400;1,9..144,500&family=Noto+Serif+SC:wght@500;700;900&family=Space+Mono:ital,wght@0,400;0,700;1,400&display=swap"
+      rel="stylesheet"
     />
     <link rel="preload" href="assets/ryan-codecat-avatar.jpg" as="image" />
     <link rel="stylesheet" href="styles.css" />
   </head>
   <body>
-    <header class="global-nav">
-      <a class="brand" href="#top">Ryan-Codecat</a>
-      <nav aria-label="页面导航">
-        <a href="#highlights">Highlights</a>
-        <a href="#contact">Contact</a>
+    <div class="scroll-progress" aria-hidden="true"></div>
+
+    <header class="masthead" id="top">
+      <a class="wordmark" href="#top">Ryan&#8209;Codecat</a>
+      <p class="masthead-meta">Issue 01 — MMXXVI</p>
+      <nav class="masthead-nav" aria-label="栏目导航">
+        <a href="#index">Index</a>
+        <a href="#features">Features</a>
+        <a href="#colophon">Contact</a>
       </nav>
     </header>
 
-    <main id="top">
-      <section class="hero section-reveal" aria-label="首页">
-        <p class="eyebrow">Rongjian You</p>
-        <h1>全员抽象派。</h1>
-        <p class="hero-subtitle">MLLM researcher. Hiphop listener. CS2 B+ survivor.</p>
-
-        <div class="hero-actions" aria-label="主要链接">
-          <a class="button primary" href="https://github.com/Ryan-Codecat" rel="noreferrer">GitHub</a>
-          <a class="button secondary" href="https://space.bilibili.com/37456088?spm_id_from=333.1007.0.0" rel="noreferrer">Bilibili</a>
+    <main>
+      <section class="cover" aria-label="封面">
+        <div class="cover-head reveal">
+          <p class="kicker">The Personal Archive · 个人主页</p>
+          <h1 class="cover-title">全员<span class="title-em">抽象</span>派。</h1>
+          <p class="cover-deck">
+            <em>An abstractionist, by consensus.</em> MLLM researcher,
+            hiphop listener, and a proud CS2 B+ survivor.
+          </p>
         </div>
 
-        <figure class="portrait-stage" aria-label="Rongjian You 照片">
-          <img src="assets/ryan-codecat-avatar.jpg" alt="Rongjian You wearing a blue cartoon helmet" />
+        <figure class="cover-figure reveal">
+          <div class="figure-frame">
+            <img
+              src="assets/ryan-codecat-avatar.jpg"
+              alt="尤荣健，戴着蓝色卡通头盔"
+            />
+          </div>
+          <figcaption>Fig. 01 — In the blue helmet, Guangzhou.</figcaption>
         </figure>
 
-        <p class="school">Jinan University</p>
-      </section>
+        <dl class="cover-credits reveal">
+          <div><dt>Name</dt><dd>尤荣健 · Rongjian You</dd></div>
+          <div><dt>Role</dt><dd>MLLM Researcher</dd></div>
+          <div><dt>School</dt><dd>Jinan University</dd></div>
+          <div><dt>Based</dt><dd>Guangzhou, CN</dd></div>
+        </dl>
 
-      <section class="intro-strip section-reveal" id="contact" aria-label="个人信息">
-        <div class="intro-copy">
-          <p class="section-label">Profile</p>
-          <h2>Rongjian You</h2>
-          <p>人工智能在读研究生，目前从事 MLLM 模型训练。正经内容暂时不多，但主页先帅起来。</p>
-        </div>
-        <div class="contact-list" aria-label="联系方式">
-          <a href="mailto:yourongjian718@gmail.com">
-            <span>Email</span>
-            <strong>yourongjian718@gmail.com</strong>
-          </a>
-          <a href="https://github.com/Ryan-Codecat" rel="noreferrer">
-            <span>GitHub</span>
-            <strong>Ryan-Codecat</strong>
-          </a>
+        <div class="cover-actions reveal">
+          <a class="link-arrow" href="https://github.com/Ryan-Codecat" rel="noreferrer">GitHub</a>
+          <a class="link-arrow" href="https://space.bilibili.com/37456088?spm_id_from=333.1007.0.0" rel="noreferrer">Bilibili</a>
         </div>
       </section>
 
-      <section class="highlights" id="highlights" aria-label="先刷重点">
-        <div class="section-heading section-reveal">
-          <p class="section-label">Highlights</p>
-          <h2>先刷重点。</h2>
-        </div>
+      <section class="index" id="index" aria-label="目录">
+        <p class="section-mark reveal">Contents · 目录</p>
+        <ol class="index-list">
+          <li class="reveal">
+            <a href="#feat-hiphop">
+              <span class="idx-no">01</span>
+              <span class="idx-title">Hiphop</span>
+              <span class="idx-leader" aria-hidden="true"></span>
+              <span class="idx-page">听</span>
+            </a>
+          </li>
+          <li class="reveal">
+            <a href="#feat-cs2">
+              <span class="idx-no">02</span>
+              <span class="idx-title">Counter&#8209;Strike 2</span>
+              <span class="idx-leader" aria-hidden="true"></span>
+              <span class="idx-page">打</span>
+            </a>
+          </li>
+          <li class="reveal">
+            <a href="#feat-bili">
+              <span class="idx-no">03</span>
+              <span class="idx-title">Bilibili</span>
+              <span class="idx-leader" aria-hidden="true"></span>
+              <span class="idx-page">看</span>
+            </a>
+          </li>
+        </ol>
+      </section>
 
-        <div class="feature-grid">
-          <article class="feature-card dark section-reveal">
-            <p class="card-number">01</p>
-            <h3>Hiphop</h3>
-            <p>很喜欢 hiphop。最喜欢的 rapper 是 Asen、GALI、法老。</p>
-            <div class="pill-row">
-              <span>Asen</span>
-              <span>GALI</span>
-              <span>法老</span>
-            </div>
-          </article>
+      <section class="features" id="features" aria-label="特写">
+        <article class="entry reveal" id="feat-hiphop">
+          <p class="entry-no">01</p>
+          <div class="entry-body">
+            <h2 class="entry-title">Hiphop</h2>
+            <p class="entry-deck">
+              很喜欢 hiphop。歌单常年单曲循环，节奏比论文 deadline 还稳。
+            </p>
+            <dl class="entry-credits">
+              <div><dt>Heavy rotation</dt><dd>Asen · GALI · 法老</dd></div>
+            </dl>
+          </div>
+        </article>
 
-          <article class="feature-card light section-reveal">
-            <p class="card-number">02</p>
-            <h3>CS2</h3>
-            <p>完美世界平台 B+。不是不想上分，是给对手一点体验空间。</p>
-            <div class="metric">
-              <span>Perfect World</span>
-              <strong>B+</strong>
-            </div>
-          </article>
+        <article class="entry reveal" id="feat-cs2">
+          <p class="entry-no">02</p>
+          <div class="entry-body">
+            <h2 class="entry-title">Counter&#8209;Strike 2</h2>
+            <p class="entry-deck">
+              完美世界平台 B+。不是不想上分，是给对手一点体验空间。
+            </p>
+            <dl class="entry-credits">
+              <div><dt>Platform</dt><dd>Perfect World</dd></div>
+            </dl>
+          </div>
+          <p class="entry-figure" aria-hidden="true">B+</p>
+        </article>
 
-          <article class="feature-card image-card section-reveal">
-            <div>
-              <p class="card-number">03</p>
-              <h3>Bilibili</h3>
-              <p>另一个入口。可能更抽象，也可能只是更真实。</p>
-            </div>
-            <a class="button primary" href="https://space.bilibili.com/37456088?spm_id_from=333.1007.0.0" rel="noreferrer">Visit</a>
-          </article>
-        </div>
+        <article class="entry reveal" id="feat-bili">
+          <p class="entry-no">03</p>
+          <div class="entry-body">
+            <h2 class="entry-title">Bilibili</h2>
+            <p class="entry-deck">
+              另一个入口。可能更抽象，也可能只是更真实。
+            </p>
+            <a class="link-arrow" href="https://space.bilibili.com/37456088?spm_id_from=333.1007.0.0" rel="noreferrer">前往主页</a>
+          </div>
+        </article>
+      </section>
+
+      <section class="profile" id="profile" aria-label="简介">
+        <p class="section-mark reveal">Profile · 简介</p>
+        <p class="profile-lead reveal">
+          人工智能在读研究生，目前从事 <em>MLLM</em>
+          模型训练。正经内容暂时不多，但主页先帅起来——毕竟排版也是生产力。
+        </p>
       </section>
     </main>
 
-    <footer class="site-footer">
-      <span>© <span id="year"></span> Ryan-Codecat</span>
-      <span>Designed like a product page, not a resume.</span>
+    <footer class="colophon" id="colophon" aria-label="版本说明与联系">
+      <div class="colophon-contact">
+        <p class="section-mark">Contact · 联系</p>
+        <dl>
+          <div>
+            <dt>Email</dt>
+            <dd><a href="mailto:yourongjian718@gmail.com">yourongjian718@gmail.com</a></dd>
+          </div>
+          <div>
+            <dt>GitHub</dt>
+            <dd><a href="https://github.com/Ryan-Codecat" rel="noreferrer">@Ryan&#8209;Codecat</a></dd>
+          </div>
+          <div>
+            <dt>Bilibili</dt>
+            <dd><a href="https://space.bilibili.com/37456088?spm_id_from=333.1007.0.0" rel="noreferrer">space.bilibili.com</a></dd>
+          </div>
+        </dl>
+      </div>
+      <div class="colophon-meta">
+        <p>© <span id="year"></span> 尤荣健 · Ryan&#8209;Codecat</p>
+        <p>Set in Fraunces, Noto Serif SC &amp; Space Mono.</p>
+        <p>全员抽象派 · typeset in the dark.</p>
+      </div>
     </footer>
 
     <script src="script.js"></script>
